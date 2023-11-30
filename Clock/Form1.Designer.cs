@@ -31,7 +31,7 @@
             components = new System.ComponentModel.Container();
             label_date = new Label();
             label_time = new Label();
-            timer1 = new System.Windows.Forms.Timer(components);
+            timer = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // label_date
@@ -53,10 +53,10 @@
             label_time.TabIndex = 1;
             label_time.Text = "sample_time";
             // 
-            // timer1
+            // timer
             // 
-            timer1.Interval = 1000;
-            timer1.Tick += timer1_Tick;
+            timer.Interval = 1000;
+            timer.Tick += timer_Tick;
             // 
             // Form1
             // 
@@ -75,6 +75,6 @@
 
         private Label label_date;
         private Label label_time;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer;
     }
 }
